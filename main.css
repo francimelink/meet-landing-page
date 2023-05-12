@@ -1,0 +1,324 @@
+:root {
+    --primary-fonts: Red Hat Display, sans-serif;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header .logo {
+    text-align: center;
+    margin: 48px 0 54px;
+}
+
+.header__image--left {
+    width: 100%;
+    height: 40vw;
+    background: no-repeat center/cover url("./assets/tablet/image-hero.png");
+}
+
+.container__headline {
+    margin: 48px auto 0;
+    padding: 0 24px;
+    max-width: 540px;
+}
+
+.container__headline h1 {
+    font-family: var(--primary-fonts);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #28283D;
+}
+
+.container__headline p {
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #87879D;
+    margin: 24px 0 32px;
+}
+
+.container__headline .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.buttons>button {
+    border: none;
+    color: white;
+    font-family: var(--primary-fonts);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    border-radius: 29px;
+
+}
+
+.button__download {
+    background-color: #4D96A9;
+    text-align: left;
+    padding: 16px 40px;
+}
+
+
+.button__download>span {
+    color: #8FE3F9;
+}
+
+.button__what {
+    background: #855FB1;
+    text-align: center;
+    padding: 16px 29px;
+}
+
+.button__download:hover,
+.button__what:hover {
+    cursor: pointer;
+
+}
+
+.button__what:hover {
+    background-color: #B18BDD;
+
+}
+
+.button__download:hover {
+    background-color: #71C0D4;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* HEADER */
+    header .logo {
+        margin-bottom: 64px;
+    }
+
+    .container__headline {
+        margin: 72px auto 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .container__headline h1 {
+        display: inline-block;
+        font-size: 48px;
+        line-height: 48px;
+        width: 340px;
+    }
+
+    .container__headline p {
+        padding: 0 24px;
+    }
+
+    .container__headline>.buttons {
+        flex-direction: row;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /* HEADER */
+    /* HEADER */
+    header .logo {
+        margin-bottom: 80px 0 60px;
+    }
+
+
+    header .container {
+        height: 358px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .container>section {
+        flex: 1;
+    }
+
+    .header__image--left {
+        background-image: url(./assets/desktop/image-hero-left.png);
+        background-size: contain;
+        max-width: calc(100% / 4);
+    }
+
+
+    .header__image--right {
+        background-image: url(./assets/desktop/image-hero-right.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 40vw;
+        max-width: calc(100% / 4);
+    }
+
+
+    .container__headline h1 {
+        font-size: 64px;
+        line-height: 64px;
+        min-width: 445px;
+    }
+
+    .container__headline p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+}

@@ -1,0 +1,4 @@
+10/5/2023:
+
+Preveril glavni naslov in besedilo spodaj. Dodal sliko in jo poravnal za mobile in tablet način.
+Dokončaj sliko za desktop. Možni layout je lahko grid.
