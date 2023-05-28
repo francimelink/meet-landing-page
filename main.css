@@ -144,7 +144,7 @@ table {
 
 body {
     width: 100%;
-    max-width: 1440px;
+    /*max-width: 1440px;*/
     margin: 0 auto;
     min-height: 100vh;
 }
@@ -353,10 +353,7 @@ header .logo {
     width: 100%;
     height: fit-content;
     color: white;
-    background: url("./assets/tablet/image-footer.jpg"), #4D96A9;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), center / cover no-repeat url("./assets/tablet/image-footer.jpg");
     padding: 72px 24px;
     position: absolute;
     top: 115px;
@@ -423,7 +420,7 @@ header .logo {
         display: inline-block;
         font-size: 48px;
         line-height: 48px;
-        width: 340px;
+        width: 350px;
     }
 
     .container__headline p {
@@ -542,15 +539,36 @@ header .logo {
     }
 
     .experience__content {
+        background: linear-gradient(0deg, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), center / cover no-repeat url("./assets/desktop/image-footer.jpg");
+    }
+
+    .experience__content>div {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
+        margin: 0 140px;
+        text-align: left;
         justify-content: space-between;
     }
 
-    .experience__content>* {
-        flex: 1;
+    .experience__title,
+    .experience__desc {
+        text-align: left;
     }
 
+    .experience__title {
+        font-size: 40px;
+        line-height: 44px;
+        border: 1px solid black;
+        width: 350px;
+    }
+
+
+    .experience__desc {
+        width: 350px;
+        margin-left: 125px;
+        margin-right: 92px;
+        flex-shrink: 1;
+    }
 }
